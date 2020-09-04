@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<div class="d-flex">
+    <div class="col-md-8">
+        <div class="d-flex justify-content-between m-5 ">
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('front')">Передняя левая нога
+            </button>
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('front')">Передняя правая нога
+            </button>
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('back')">Назад левая нога</button>
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('back')">Назад правая нога
+            </button>
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('frontBack')">Левая нога</button>
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('frontBack')">Правая нога</button>
+        </div>
+        <div class="constructor">
+            <div class="front"></div>
+            <div class="back">
+                <div class="backTop"></div>
+                <div class="backButton"></div>
+            </div>
+        </div>
+
+        <div class="frontBack">
+            <div class="par">
+                <div class="front2"></div>
+            </div>
+            <div class="par">
+                <div class="back2">
+                    <div class="backTop"></div>
+                    <div class="backButton"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="isshow">
+            <img src="image/add-layer.svg" height="250" width="300" alt="">
+            <p>Работа не добавлена<br>
+                Поддерживаются только файлы JPG / PNG</p>
+            <button type="button" class="btn btn-success conBut m-5 customDesign">Добавит свой дизайн</button>
+
+            <ul>
+                <b>Требования к файлу для печати</b>
+                <li>Поддерживаются типы файлов JPG и PNG</li>
+                <li>Максимальный размер файла 50 МБ</li>
+                <li>Рекомендуемый размер 1358 × 3838 пикселей.</li>
+            </ul>
+        </div>
+        <div class="ishide">
+            <input type="file" class="custom-file-input">
+            <div class="tab">
+                <button class="tablinks btn btn-info" onclick="openCity(event, 'London')">Новый Стиль</button>
+                <button class="tablinks btn btn-info" onclick="openCity(event, 'Paris')">Моя библиотека</button>
+            </div>
+            <div id="London" class="tabcontent">
+                <input type="file" class="inputFile mt-5">
+            </div>
+
+            <div id="Paris" class="tabcontent" style="display: none">
+                <div class="mt-5">
+                    Выберите цвет
+                    <input type="color" id="colorInput">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

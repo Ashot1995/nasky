@@ -1,0 +1,50 @@
+.conBut {
+    border-radius: 25px;
+    font-size: small !important;
+}
+
+.ishide {
+    display: none;
+}
+
+.constructor {
+    border: 3px dotted black;
+    height: 300px;
+    width: 150px;
+    margin: 0 auto;
+}
+.frontBack{
+    display: none;
+    justify-content: space-around;
+}
+.par {
+    border: 3px dotted black;
+    height: 300px;
+    width: 150px;
+}
+
+.front {
+    display: none;
+    border: 2px dotted black;
+    margin: 9px;
+    height: 280px;
+    width: 125px;
+}
+
+.front2 {
+    border: 2px dotted black;
+    margin: 9px;
+    height: 280px;
+    width: 125px;
+}
+
+.backTop, .backButton {
+    border: 2px dotted black;
+    margin: 25px;
+    height: 111px;
+    width: 96px;
+}
+.tabcontent{
+    
+}
+/*upload*/
