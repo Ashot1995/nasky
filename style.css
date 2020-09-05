@@ -47,4 +47,28 @@
 .tabcontent{
     
 }
+li{
+    list-style: none;
+}
+
+.list[_ngcontent-ogw-c120] {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    margin: 0 -3px;
+}
+
+.item[_ngcontent-ogw-c120] {
+    padding: 8px;
+}
+
+.color-select[_ngcontent-ogw-c120] {
+    height: 32px;
+    width: 32px;
+    display: block;
+    border-radius: 100%;
+    border: 2px solid #ebebeb;
+    cursor: pointer;
+    transition: .3s;
+}
 /*upload*/
