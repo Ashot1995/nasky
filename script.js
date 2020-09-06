@@ -1,7 +1,7 @@
-$('.list li').click(function (){
+$('.list li').click(function () {
     $('.myIcon').remove()
-    $('.constructor,.par').attr('style',$(this).children('button').attr('style'));
-$(this).append('<i class="fa fa-check-circle myIcon" style="position: absolute; color: green; font-size: 30px; margin: -31px 3px; z-index: 9999999;"></i>')
+    $('.constructor,.par').attr('style', $(this).children('button').attr('style'));
+    $(this).append('<i class="fa fa-check-circle myIcon" style="position: absolute; color: green; font-size: 30px; margin: -31px 3px; z-index: 9999999;"></i>')
 })
 
 
