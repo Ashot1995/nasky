@@ -39,7 +39,9 @@
 
         <div class="frontBack">
             <div class="par">
-                <div class="front2"></div>
+                <div class="front2">
+                        <img class="resize-image" src="" alt="image for resizing">
+                </div>
             </div>
             <div class="par">
                 <div class="back2">
@@ -71,7 +73,7 @@
                 <button class="tablinks btn btn-info" onclick="openCity(event, 'Paris')">Моя библиотека</button>
             </div>
             <div id="London" class="tabcontent">
-                <input type="file" class="inputFile mt-5">
+                <input type="file" class="btn js-loadfile" value="Upload" />
             </div>
 
             <div id="Paris" class="tabcontent" style="display: none">
@@ -173,6 +175,7 @@
 </div>
 
 <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </body>
 </html>
