@@ -161,41 +161,59 @@
 }
 
 .constructor {
-    border: 3px dotted black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #d6d6d6;
+    outline: 1px dashed #000;
     height: 300px;
     width: 150px;
     margin: 0 auto;
 }
 .frontBack{
     display: none;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 .par {
-    border: 3px dotted black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #d6d6d6;
+    outline: 1px dashed #000;
+    margin-left: 70px;
     height: 300px;
     width: 150px;
 }
+.image_preview_box {
+    display: none;
+}
+.image_preview {
+    display: block;
+    width: 200px;
+    height: 200px;
 
+}
 .front {
     display: none;
-    border: 2px dotted black;
-    margin: 9px;
+    border: 1px dotted black;
     height: 280px;
     width: 125px;
 }
 
 .front2 {
-    border: 2px dotted black;
-    margin: 9px;
+    border: 1px dotted black;
     height: 280px;
     width: 125px;
 }
 
 .backTop, .backButton {
-    border: 2px dotted black;
-    margin: 25px;
+    border: 1px dotted black;
     height: 111px;
     width: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22px;
 }
 .tabcontent{
     

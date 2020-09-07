@@ -15,7 +15,7 @@ function conBut(e) {
         $('.front').css('display', 'block')
         $('.back').css('display', 'none')
         $('.frontBack').css('display', 'none')
-        $('.constructor').css('display', 'block')
+        $('.constructor').css('display', 'flex')
     } else if (e === 'back') {
         $('.constructor').css('display', 'block')
         $('.front').css('display', 'none')
@@ -63,7 +63,7 @@ let resizeableImage = function(image_target) {
 
         //load a file with html5 file api
         $('.js-loadfile').change(function(evt) {
-
+            $('.image_preview_box').css('display', 'flex')
             let files = evt.target.files; // FileList object
             let reader = new FileReader();
 
@@ -221,6 +221,7 @@ let resizeableImage = function(image_target) {
     };
 
     endMoving = function(e){
+        alert('sss');
         e.preventDefault();
         $(document).off('mouseup touchend', endMoving);
         $(document).off('mousemove touchmove', moving);
