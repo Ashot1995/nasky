@@ -2,10 +2,12 @@ $('.list li').click(function () {
     $('.myIcon').remove()
     let a = $(this).children('button').attr('style').replace(/background: /, '').trim()
      let b =  a.replace(/;/, '');
-    $('.constructor,.par').css("background-color",b)
+    $('.par').css("background-color",b)
     $(this).append('<i class="fa fa-check-circle myIcon" style="position: absolute; color: green; font-size: 30px; margin: -32px 3px; z-index: 9999999;"></i>')
 })
+$('.openModel').click(function (){
 
+})
 
 $(".customDesign").on('click', function () {
     $('.ishide').show();
