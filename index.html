@@ -29,7 +29,7 @@
             <button type="button" class="btn btn-outline-info conBut" onclick="conBut('frontBack')">Левая нога</button>
             <button type="button" class="btn btn-outline-info conBut" onclick="conBut('frontBack')">Правая нога</button>
         </div>
-        <div class="constructor">
+        <div class="constructor" >
             <div class="front"></div>
             <div class="back">
                 <div class="backTop"></div>
@@ -39,12 +39,26 @@
 
         <div class="frontBack">
             <div class="par">
-                <div class="front2"></div>
+                <div class="front2">
+                        <img class="resize-image" src="" alt="image for resizing">
+                </div>
             </div>
             <div class="par">
                 <div class="back2">
                     <div class="backTop"></div>
                     <div class="backButton"></div>
+                </div>
+            </div>
+            <div class="row image_preview_box">
+                <div class="col-md-6">
+                    <img class="image_preview ml-5" src="image/left.jpg" alt="">
+                    <img class="resize-image" src="" alt="image for resizing">
+                    <p class="text-center ml-5">Left Socks</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="image_preview" src="image/left.jpg" alt="">
+                    <img class="resize-image" src="" alt="image for resizing">
+                    <p class="text-center">Right Socks</p>
                 </div>
             </div>
         </div>
@@ -71,7 +85,7 @@
                 <button class="tablinks btn btn-info" onclick="openCity(event, 'Paris')">Моя библиотека</button>
             </div>
             <div id="London" class="tabcontent">
-                <input type="file" class="inputFile mt-5">
+                <input type="file" class="btn js-loadfile" value="Upload" />
             </div>
 
             <div id="Paris" class="tabcontent" style="display: none">
@@ -173,6 +187,7 @@
 </div>
 
 <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </body>
 </html>
