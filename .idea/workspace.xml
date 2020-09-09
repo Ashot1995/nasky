@@ -75,8 +75,13 @@
       <workItem from="1599500861695" duration="777000" />
 =======
       <workItem from="1599496735922" duration="16000" />
+<<<<<<< HEAD
+      <workItem from="1599500888224" duration="8707000" />
+      <workItem from="1599673855534" duration="8101000" />
+=======
       <workItem from="1599500888224" duration="7001000" />
 >>>>>>> 859cb4513e34cc3634aa60aeade2ee60cf867bdc
+>>>>>>> bad9637669cc01cc65567a20d9f35ed4cd9e4bd6
     </task>
     <servers />
   </component>
@@ -84,6 +89,12 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1599542882667">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599542882667" />
+=======
 <<<<<<< HEAD
     <state x="495" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599461378257">
       <screen x="58" y="27" width="1308" height="741" />
@@ -95,6 +106,7 @@
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599496749511" />
 >>>>>>> 859cb4513e34cc3634aa60aeade2ee60cf867bdc
+>>>>>>> bad9637669cc01cc65567a20d9f35ed4cd9e4bd6
     <state x="201" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1599165538313">
       <screen x="58" y="27" width="1308" height="741" />
     </state>

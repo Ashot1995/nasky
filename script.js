@@ -38,7 +38,13 @@ $(".customDesign").on('click', function () {
     $('.isshow').hide();
 });
 
-function conBut(e) {
+function conBut(e, show) {
+    if (show) {
+        $('.right').addClass('active')
+    } else {
+        $('.right').attr('class', 'btn btn-outline-info conBut right')
+
+    }
     if (e === 'front') {
         $('.front').css('display', 'block')
         $('.back').css('display', 'none')
@@ -91,6 +97,15 @@ let resizeableImage = function (image_target) {
 
         //load a file with html5 file api
         $('.js-loadfile').change(function (evt) {
+            setTimeout(function () {
+                let imgSrc = $('img.resize-image').attr('src');
+                let getWhite = $('img.resize-image').width();
+                let getHeight = $('img.resize-image').height();
+                $('img.choose_iamge').attr('src', imgSrc)
+                $('img.choose_iamge').css('width', getWhite / 3.5 + 'px')
+                $('img.choose_iamge').css('height', getHeight / 2.8 + 'px')
+            }, 500);
+
             $('.image_preview_box').css('display', 'flex')
             let files = evt.target.files; // FileList object
             let reader = new FileReader();
@@ -237,7 +252,23 @@ let resizeableImage = function (image_target) {
         resize_canvas.height = height;
         resize_canvas.getContext('2d').drawImage(orig_src, 0, 0, width, height);
         $(image_target).attr('src', resize_canvas.toDataURL("image/png"));
-        //$(image_target).width(width).height(height);
+
+        let getWhite = $('img.resize-image').width();
+        let getHeight = $('img.resize-image').height();
+        if (getWhite > 123) {
+            $('img.choose_iamge').css('width', 123 / 3.5 + 'px')
+            $('img.resize-image').css('width', 123 + 'px')
+        } else {
+            $('img.choose_iamge').css('width', getWhite / 3.5 + 'px')
+
+        }
+        if (getHeight > 278) {
+            $('img.choose_iamge').css('height', 278 / 2.8 + 'px')
+            $('img.resize-image').css('height', 278 + 'px')
+        } else {
+            $('img.choose_iamge').css('height', getHeight / 2.8 + 'px')
+        }
+
     };
 
     startMoving = function (e) {
@@ -249,7 +280,14 @@ let resizeableImage = function (image_target) {
     };
 
     endMoving = function (e) {
-        alert('sss');
+
+        console.log(e.clientX)
+        if (e.clientX > 300) {
+            $('.choose_iamge').css('left', '178px')
+        } else {
+            $('.choose_iamge').css('left', '111px')
+
+        }
         e.preventDefault();
         $(document).off('mouseup touchend', endMoving);
         $(document).off('mousemove touchmove', moving);
@@ -296,4 +334,14 @@ let resizeableImage = function (image_target) {
 
 // Kick everything off with the target image
 resizeableImage($('.resize-image'));
+
+document.querySelector('#submit').addEventListener('click', function () {
+    html2canvas(document.querySelector('.gago'), {
+        onrendered: function (canvas) {
+            // document.body.appendChild(canvas);
+            return Canvas2Image.saveAsPNG(canvas);
+        }
+    });
+});
+
 
