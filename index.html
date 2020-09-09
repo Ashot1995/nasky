@@ -29,7 +29,7 @@
             <button type="button" class="btn btn-outline-info conBut" onclick="conBut('frontBack',false)">Левая нога</button>
             <button type="button" class="btn btn-outline-info conBut right" onclick="conBut('frontBack',true)">Правая нога</button>
         </div>
-        <div class="constructor" >
+        <div class="constructor">
             <div class="front"></div>
             <div class="back">
                 <div class="backTop"></div>
@@ -40,7 +40,7 @@
         <div class="frontBack">
             <div class="par">
                 <div class="front2">
-                        <img class="resize-image" src="" alt="image for resizing">
+                    <img class="resize-image" src="" alt="image for resizing">
                 </div>
             </div>
             <div class="par">
@@ -82,10 +82,16 @@
                 <button class="tablinks btn btn-info" onclick="openCity(event, 'Paris')">Моя библиотека</button>
             </div>
             <div id="London" class="tabcontent">
-                <input type="file" class="btn js-loadfile" value="Upload" />
+                <input type="file" class="btn js-loadfile" value="Upload"/>
             </div>
 
             <div id="Paris" class="tabcontent" style="display: none">
+                <h2>Информация о продукте</h2>
+                <div class="d-flex justify-content-between">
+                    <div><p>Длина носков <span></span></p></div>
+                    <div><p class="openModel">Вся длина носков 3</p></div>
+                </div>
+
                 <div class="mt-5">
                     <div _ngcontent-ogw-c120="" class="sidebar-scrollable"><h5 _ngcontent-ogw-c120="" class="subtitle">
                         Выберите цвет: </h5>

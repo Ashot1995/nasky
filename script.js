@@ -1,9 +1,13 @@
 $('.list li').click(function () {
     $('.myIcon').remove()
-    $('.constructor,.par').attr('style', $(this).children('button').attr('style'));
-    $(this).append('<i class="fa fa-check-circle myIcon" style="position: absolute; color: green; font-size: 30px; margin: -31px 3px; z-index: 9999999;"></i>')
+    let a = $(this).children('button').attr('style').replace(/background: /, '').trim()
+     let b =  a.replace(/;/, '');
+    $('.par').css("background-color",b)
+    $(this).append('<i class="fa fa-check-circle myIcon" style="position: absolute; color: green; font-size: 30px; margin: -32px 3px; z-index: 9999999;"></i>')
 })
+$('.openModel').click(function (){
 
+})
 
 $(".customDesign").on('click', function () {
     $('.ishide').show();
@@ -77,7 +81,6 @@ let resizeableImage = function (image_target) {
                 $('img.choose_iamge').css('width', getWhite / 3.5 + 'px')
                 $('img.choose_iamge').css('height', getHeight / 2.8 + 'px')
             }, 500);
-
 
             $('.image_preview_box').css('display', 'flex')
             let files = evt.target.files; // FileList object
@@ -253,6 +256,7 @@ let resizeableImage = function (image_target) {
     };
 
     endMoving = function (e) {
+
         console.log(e.clientX)
         if (e.clientX > 300) {
             $('.choose_iamge').css('left', '178px')
