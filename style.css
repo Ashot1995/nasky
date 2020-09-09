@@ -195,9 +195,10 @@
 }
 .choose_iamge {
     position: absolute;
-    top: 53px;
-    width: 16%;
-    left: 111px;
+    width: 80%;
+    left: 53%;
+    top: 50px;
+    z-index: 999;
 }
 .front {
     display: none;

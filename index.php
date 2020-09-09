@@ -54,9 +54,9 @@
                     <img class="image_preview ml-5" src="image/left.jpg" alt="">
                     <img class="choose_iamge" src="" alt="image for resizing">
                 </div>
-                <div class="col-md-6">
-                    <img class="image_preview" src="image/left.jpg" alt="">
-                </div>
+<!--                <div class="col-md-6">-->
+<!--                    <img class="image_preview" src="image/left.jpg" alt="">-->
+<!--                </div>-->
             </div>
         </div>
 
