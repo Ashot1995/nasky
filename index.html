@@ -19,15 +19,15 @@
 <div class="d-flex">
     <div class="col-md-8">
         <div class="d-flex justify-content-between m-5 ">
-            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('front')">Передняя левая нога
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('front',false)">Передняя левая нога
             </button>
-            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('front')">Передняя правая нога
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('front',false)">Передняя правая нога
             </button>
-            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('back')">Назад левая нога</button>
-            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('back')">Назад правая нога
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('back',false)">Назад левая нога</button>
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('back',false)">Назад правая нога
             </button>
-            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('frontBack')">Левая нога</button>
-            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('frontBack')">Правая нога</button>
+            <button type="button" class="btn btn-outline-info conBut" onclick="conBut('frontBack',false)">Левая нога</button>
+            <button type="button" class="btn btn-outline-info conBut right" onclick="conBut('frontBack',true)">Правая нога</button>
         </div>
         <div class="constructor" >
             <div class="front"></div>
@@ -49,16 +49,13 @@
                     <div class="backButton"></div>
                 </div>
             </div>
-            <div class="row image_preview_box">
-                <div class="col-md-6">
+            <div class="row image_preview_box ">
+                <div class="col-md-6 position-relative gago">
                     <img class="image_preview ml-5" src="image/left.jpg" alt="">
-                    <img class="resize-image" src="" alt="image for resizing">
-                    <p class="text-center ml-5">Left Socks</p>
+                    <img class="choose_iamge" src="" alt="image for resizing">
                 </div>
                 <div class="col-md-6">
                     <img class="image_preview" src="image/left.jpg" alt="">
-                    <img class="resize-image" src="" alt="image for resizing">
-                    <p class="text-center">Right Socks</p>
                 </div>
             </div>
         </div>
@@ -188,6 +185,9 @@
 
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js
+"></script>
+<script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
 
 </body>
 </html>
