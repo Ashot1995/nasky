@@ -192,6 +192,9 @@
 </div>
 </div>
 
+    <button id="submit" class="clearfix btn btn-info" download>Send</button>
+
+
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 

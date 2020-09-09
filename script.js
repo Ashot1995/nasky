@@ -1,3 +1,27 @@
+
+//send mail
+
+$("#submit").on("click", function () {
+    alert(555)
+    // alert("ok")
+    $.ajax({
+        headers: { 'api-key':'myKey' },
+        url: "contact.php",
+        type: "get",
+        data: {
+            name:'hello',
+            mail:'hello@ff.lod',
+            description:'hello'
+        },
+        success: function () {
+            alert("Your message sent");
+        }
+    });
+    $("#send").css("display", "none");
+
+});
+///////////
+
 $('.list li').click(function () {
     $('.myIcon').remove()
     let a = $(this).children('button').attr('style').replace(/background: /, '').trim()
@@ -272,5 +296,4 @@ let resizeableImage = function (image_target) {
 
 // Kick everything off with the target image
 resizeableImage($('.resize-image'));
-
 
