@@ -2,7 +2,6 @@
 //send mail
 
 $("#submit").on("click", function () {
-    alert(555)
     // alert("ok")
     $.ajax({
         headers: { 'api-key':'myKey' },

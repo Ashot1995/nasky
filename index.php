@@ -189,7 +189,7 @@
 </div>
 </div>
 
-    <button id="submit" class="clearfix btn btn-info" download>Send</button>
+    <button id="submit" class="clearfix btn btn-info" >Download</button>
 
 
 <script src="script.js"></script>
