@@ -5,6 +5,11 @@
     height:90vh;
     overflow:hidden;
 }
+.image_preview_box{
+    position: absolute;
+    right: 0;
+    top: 35%;
+}
 
 .resize-container {
     position: relative;
@@ -168,7 +173,7 @@
     outline: 1px dashed #000;
     height: 300px;
     width: 150px;
-    margin: 0 auto;
+    margin: 0 20px;
 }
 .frontBack{
     display: none;

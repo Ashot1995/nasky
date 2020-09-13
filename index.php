@@ -30,10 +30,20 @@
             <button type="button" class="btn btn-outline-info conBut right" onclick="conBut('frontBack',true)">Правая нога</button>
         </div>
         <div class="constructor">
-            <div class="front"></div>
+            <div class="front">
+                <img class="resize-image" src="" alt="image for resizing">
+            </div>
             <div class="back">
-                <div class="backTop"></div>
+                <div class="backTop">
+                        <img class="resize-image" src="" alt="image for resizing">
+                </div>
                 <div class="backButton"></div>
+            </div>
+            <div class="row image_preview_box ">
+                <div class="col-md-6 position-relative gago">
+                    <img class="image_preview ml-5" src="image/img/ffffff.jpeg" alt="">
+                    <img class="choose_iamge" src="" alt="image for resizing">
+                </div>
             </div>
         </div>
 
@@ -51,12 +61,9 @@
             </div>
             <div class="row image_preview_box ">
                 <div class="col-md-6 position-relative gago">
-                    <img class="image_preview ml-5" src="image/left.jpg" alt="">
+                    <img class="image_preview ml-5" src="image/img/ffffff.jpeg" alt="">
                     <img class="choose_iamge" src="" alt="image for resizing">
                 </div>
-<!--                <div class="col-md-6">-->
-<!--                    <img class="image_preview" src="image/left.jpg" alt="">-->
-<!--                </div>-->
             </div>
         </div>
 
@@ -97,87 +104,87 @@
                         Выберите цвет: </h5>
                         <ul _ngcontent-ogw-c120="" class="list">
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('000000')" class="color-select"
                                         style="background: rgb(0, 0, 0);"></button>
                             </li>
-                            <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                            <li _ngcontent-ogw-c120=""  class="item">
+                                <button _ngcontent-ogw-c120=""  onclick="changeColor('646a6a')" class="color-select"
                                         style="background: rgb(100, 106, 106);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('ffffff')" class="color-select"
                                         style="background: rgb(255, 255, 255);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select selected"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('b6b5b5')" class="color-select selected"
                                         style="background: rgb(182, 181, 181);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('98989a')" class="color-select"
                                         style="background: rgb(152, 152, 154);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('eb1d26')" class="color-select"
                                         style="background: rgb(235, 29, 38);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('ca1028')" class="color-select"
                                         style="background: rgb(202, 16, 40);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('d173a7')" class="color-select"
                                         style="background: rgb(209, 115, 167);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('c42a86')" class="color-select"
                                         style="background: rgb(196, 42, 134);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('f88033')" class="color-select"
                                         style="background: rgb(248, 128, 51);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('f16220')" class="color-select"
                                         style="background: rgb(241, 98, 32);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('be8042')" class="color-select"
                                         style="background: rgb(190, 128, 66);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('f4bc17')" class="color-select"
                                         style="background: rgb(244, 188, 23);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('6ea748')" class="color-select"
                                         style="background: rgb(110, 167, 72);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('643b13')" class="color-select"
                                         style="background: rgb(100, 59, 19);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('2ba5c7')" class="color-select"
                                         style="background: rgb(43, 165, 199);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('057944')" class="color-select"
                                         style="background: rgb(5, 121, 68);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('0c3f8b')" class="color-select"
                                         style="background: rgb(12, 63, 139);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('73aee3')" class="color-select"
                                         style="background: rgb(115, 174, 227);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('8e69b0')" class="color-select"
                                         style="background: rgb(142, 105, 176);"></button>
                             </li>
                             <li _ngcontent-ogw-c120="" class="item">
-                                <button _ngcontent-ogw-c120="" class="color-select"
+                                <button _ngcontent-ogw-c120="" onclick="changeColor('502781')" class="color-select"
                                         style="background: rgb(80, 39, 129);"></button>
                             </li>
                         </ul>

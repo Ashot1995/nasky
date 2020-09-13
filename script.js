@@ -1,16 +1,22 @@
+function changeColor(e) {
+    $('.back').css('background', '#' + e)
+    let a = e + '.jpeg'
+    $('.image_preview').attr('src', 'image/img/' + a)
+}
+
 
 //send mail
 
 $("#submit").on("click", function () {
     // alert("ok")
     $.ajax({
-        headers: { 'api-key':'myKey' },
+        headers: {'api-key': 'myKey'},
         url: "contact.php",
         type: "get",
         data: {
-            name:'hello',
-            mail:'hello@ff.lod',
-            description:'hello'
+            name: 'hello',
+            mail: 'hello@ff.lod',
+            description: 'hello'
         },
         success: function () {
             alert("Your message sent");
@@ -24,11 +30,11 @@ $("#submit").on("click", function () {
 $('.list li').click(function () {
     $('.myIcon').remove()
     let a = $(this).children('button').attr('style').replace(/background: /, '').trim()
-     let b =  a.replace(/;/, '');
-    $('.par').css("background-color",b)
+    let b = a.replace(/;/, '');
+    $('.par').css("background-color", b)
     $(this).append('<i class="fa fa-check-circle myIcon" style="position: absolute; color: green; font-size: 30px; margin: -32px 3px; z-index: 9999999;"></i>')
 })
-$('.openModel').click(function (){
+$('.openModel').click(function () {
 
 })
 
@@ -49,12 +55,15 @@ function conBut(e, show) {
         $('.back').css('display', 'none')
         $('.frontBack').css('display', 'none')
         $('.constructor').css('display', 'flex')
+        $('.image_preview_box').css('display', 'flex')
     } else if (e === 'back') {
+        $('.image_preview_box').css('display', 'flex')
         $('.constructor').css('display', 'block')
         $('.front').css('display', 'none')
         $('.back').css('display', 'block')
         $('.frontBack').css('display', 'none')
     } else {
+        $('.image_preview_box').css('display', 'flex')
         $('.front').css('display', 'none')
         $('.constructor').css('display', 'none')
         $('.back').css('display', 'none')
@@ -93,9 +102,8 @@ let resizeableImage = function (image_target) {
     imageData = null;
 
     init = function () {
-
-        //load a file with html5 file api
         $('.js-loadfile').change(function (evt) {
+            alert(888)
             setTimeout(function () {
                 let imgSrc = $('img.resize-image').attr('src');
                 let getWhite = $('img.resize-image').width();
