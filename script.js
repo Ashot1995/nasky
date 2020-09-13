@@ -103,7 +103,6 @@ let resizeableImage = function (image_target) {
 
     init = function () {
         $('.js-loadfile').change(function (evt) {
-            alert(888)
             setTimeout(function () {
                 let imgSrc = $('img.resize-image').attr('src');
                 let getWhite = $('img.resize-image').width();
@@ -122,7 +121,7 @@ let resizeableImage = function (image_target) {
                 loadData();
             }
             reader.readAsDataURL(files[0]);
-            $('.resize-image').show();
+                $('.aaa').show();
         });
 
         // When resizing, we will always use this copy of the original as the base

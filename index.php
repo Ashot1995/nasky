@@ -31,11 +31,11 @@
         </div>
         <div class="constructor">
             <div class="front">
-                <img class="resize-image" src="" alt="image for resizing">
+                <img class="resize-image aaa" src="" alt="image for resizing">
             </div>
             <div class="back">
                 <div class="backTop">
-                        <img class="resize-image" src="" alt="image for resizing">
+                        <img class="resize-image aaa" src="" alt="image for resizing">
                 </div>
                 <div class="backButton"></div>
             </div>
@@ -50,7 +50,7 @@
         <div class="frontBack">
             <div class="par">
                 <div class="front2">
-                    <img class="resize-image" src="" alt="image for resizing">
+                    <img class="resize-image aaa" src="" alt="image for resizing">
                 </div>
             </div>
             <div class="par">
@@ -89,7 +89,8 @@
                 <button class="tablinks btn btn-info" onclick="openCity(event, 'Paris')">Моя библиотека</button>
             </div>
             <div id="London" class="tabcontent">
-                <input type="file" class="btn js-loadfile" value="Upload"/>
+                <button onclick="event.preventDefault(); document.getElementById('file').click();"><img src="image/upload.png" height="100px" width="100px" alt=""> Загрузить картинку, фото</button>
+                <input type="file" class="btn js-loadfile " id="file" value="Upload" style="display: none"/>
             </div>
 
             <div id="Paris" class="tabcontent" style="display: none">

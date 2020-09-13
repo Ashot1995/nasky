@@ -201,7 +201,7 @@
 .choose_iamge {
     position: absolute;
     width: 80%;
-    left: 83%;
+    left: 81%;
     top: 50px;
     z-index: 999;
 }
@@ -228,7 +228,7 @@
     margin: 22px;
 }
 .tabcontent{
-    
+    margin-top: 50px;
 }
 li{
     list-style: none;
