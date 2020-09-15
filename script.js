@@ -103,14 +103,16 @@ let resizeableImage = function (image_target) {
 
     init = function () {
         $('.js-loadfile').change(function (evt) {
+           $('.choose_iamge').css('display','block')
+           $('.aaa').css('display','block')
             setTimeout(function () {
                 let imgSrc = $('img.resize-image').attr('src');
                 let getWhite = $('img.resize-image').width();
                 let getHeight = $('img.resize-image').height();
                 $('img.choose_iamge').attr('src', imgSrc)
-                $('img.choose_iamge').css('width', getWhite / 3.5 + 'px')
-                $('img.choose_iamge').css('height', getHeight / 2.8 + 'px')
-            }, 500);
+                $('img.choose_iamge').css('width', getWhite / 2.7 + 'px')
+                $('img.choose_iamge').css('height', getHeight / 1.8 + 'px')
+            }, 600);
 
             $('.image_preview_box').css('display', 'flex')
             let files = evt.target.files; // FileList object
@@ -262,17 +264,17 @@ let resizeableImage = function (image_target) {
         let getWhite = $('img.resize-image').width();
         let getHeight = $('img.resize-image').height();
         if (getWhite > 123) {
-            $('img.choose_iamge').css('width', 123 / 3.5 + 'px')
+            $('img.choose_iamge').css('width', 123 / 2.8 + 'px')
             $('img.resize-image').css('width', 123 + 'px')
         } else {
-            $('img.choose_iamge').css('width', getWhite / 3.5 + 'px')
+            $('img.choose_iamge').css('width', getWhite / 2.8 + 'px')
 
         }
         if (getHeight > 278) {
-            $('img.choose_iamge').css('height', 278 / 2.8 + 'px')
+            $('img.choose_iamge').css('height', 278 / 1.8 + 'px')
             $('img.resize-image').css('height', 278 + 'px')
         } else {
-            $('img.choose_iamge').css('height', getHeight / 2.8 + 'px')
+            $('img.choose_iamge').css('height', getHeight / 1.8 + 'px')
         }
 
     };
@@ -289,9 +291,9 @@ let resizeableImage = function (image_target) {
 
         console.log(e.clientX)
         if (e.clientX > 300) {
-            $('.choose_iamge').css('left', '178px')
+            $('.choose_iamge').css('left', '212px')
         } else {
-            $('.choose_iamge').css('left', '111px')
+            $('.choose_iamge').css('left', '130px')
 
         }
         e.preventDefault();

@@ -29,28 +29,27 @@
             <button type="button" class="btn btn-outline-info conBut" onclick="conBut('frontBack',false)">Левая нога</button>
             <button type="button" class="btn btn-outline-info conBut right" onclick="conBut('frontBack',true)">Правая нога</button>
         </div>
+        <img class="resize-image aaa" src="" style="display: none" alt="image for resizing">
+
         <div class="constructor">
             <div class="front">
-                <img class="resize-image aaa" src="" alt="image for resizing">
             </div>
             <div class="back">
                 <div class="backTop">
-                        <img class="resize-image aaa" src="" alt="image for resizing">
                 </div>
                 <div class="backButton"></div>
             </div>
             <div class="row image_preview_box ">
                 <div class="col-md-6 position-relative gago">
                     <img class="image_preview ml-5" src="image/img/ffffff.jpeg" alt="">
-                    <img class="choose_iamge" src="" alt="image for resizing">
+                    <img class="choose_iamge" style="display: none" src="" alt="image for resizing">
                 </div>
             </div>
         </div>
 
-        <div class="frontBack">
+        <div class="frontBack" style="margin-left: -48px;">
             <div class="par">
                 <div class="front2">
-                    <img class="resize-image aaa" src="" alt="image for resizing">
                 </div>
             </div>
             <div class="par">
@@ -195,9 +194,10 @@
         </div>
     </div>
 </div>
-</div>
 
-    <button id="submit" class="clearfix btn btn-info" >Download</button>
+</div>
+<button id="submit" class="clearfix btn btn-info" style="margin-left: 60px;">Download</button>
+
 
 
 <script src="script.js"></script>

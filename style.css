@@ -12,10 +12,10 @@
 }
 
 .resize-container {
-    position: relative;
+    position: absolute;
     display: inline-block;
     cursor: move;
-    margin: 0 auto;
+    margin: 10px 4%;
 }
 
 .resize-container-ontop {
@@ -194,14 +194,13 @@
 }
 .image_preview {
     display: block;
-    width: 200px;
-    height: 200px;
-
+    width: 260px;
+    height: 260px;
 }
 .choose_iamge {
     position: absolute;
     width: 80%;
-    left: 81%;
+    left: 75%;
     top: 50px;
     z-index: 999;
 }
